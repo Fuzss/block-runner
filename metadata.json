@@ -1,0 +1,69 @@
+{
+    "mod": {
+        "id": "blockrunner",
+        "group": "fuzs.blockrunner",
+        "name": "Block Runner",
+        "version": "21.11.0",
+        "authors": [
+            "Fuzs"
+        ],
+        "description": "Encourages path building by making you run faster on certain blocks such as path blocks.",
+        "license": "MPL-2.0"
+    },
+    "dependencies": [
+        {
+            "name": "neoforgedatapackextensions",
+            "type": "embedded",
+            "platforms": [
+                "fabric",
+                "neoforge"
+            ]
+        },
+        {
+            "name": "fabricapi",
+            "type": "required",
+            "platforms": [
+                "fabric"
+            ]
+        },
+        {
+            "name": "forgeconfigapiport",
+            "type": "required",
+            "platforms": [
+                "fabric"
+            ]
+        },
+        {
+            "name": "puzzleslib",
+            "type": "required",
+            "platforms": [
+                "fabric",
+                "neoforge"
+            ]
+        }
+    ],
+    "links": [
+        {
+            "name": "github",
+            "slug": "blockrunner"
+        },
+        {
+            "name": "curseforge",
+            "slug": "block-runner",
+            "id": "442842"
+        },
+        {
+            "name": "modrinth",
+            "slug": "block-runner",
+            "id": "1VSGxqkt"
+        }
+    ],
+    "environments": {
+        "client": "unsupported",
+        "server": "required"
+    },
+    "platforms": [
+        "fabric",
+        "neoforge"
+    ]
+}
