@@ -6,7 +6,7 @@ import fuzs.blockrunner.BlockRunner;
 import fuzs.blockrunner.config.ClientConfig;
 import fuzs.blockrunner.world.level.block.data.BlockSpeed;
 import net.minecraft.client.Minecraft;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.world.entity.ai.attributes.AttributeInstance;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
@@ -41,7 +41,7 @@ public class FieldOfViewHelper {
         return fovModifier;
     }
 
-    private static double calculateAttributeValueSkipping(AttributeInstance attribute, ResourceLocation... skippedModifiers) {
+    private static double calculateAttributeValueSkipping(AttributeInstance attribute, Identifier... skippedModifiers) {
 
         double baseValue = attribute.getBaseValue();
 

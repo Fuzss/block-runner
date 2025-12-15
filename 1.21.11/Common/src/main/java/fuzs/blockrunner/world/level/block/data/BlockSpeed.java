@@ -6,11 +6,11 @@ import fuzs.blockrunner.BlockRunner;
 import fuzs.blockrunner.init.ModRegistry;
 import fuzs.neoforgedatapackextensions.api.v1.DataMapRegistry;
 import net.minecraft.core.Holder;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.world.level.block.Block;
 
 public record BlockSpeed(double speed) {
-    public static final ResourceLocation SPEED_MODIFIER_BLOCK_SPEED_IDENTIFIER = BlockRunner.id("block_speed");
+    public static final Identifier SPEED_MODIFIER_BLOCK_SPEED_IDENTIFIER = BlockRunner.id("block_speed");
     static final double MAX_SPEED_VALUE = 8.0;
     public static final Codec<BlockSpeed> SPEED_CODEC = Codec.doubleRange(0, MAX_SPEED_VALUE)
             .xmap(BlockSpeed::new, BlockSpeed::speed);
