@@ -4,7 +4,7 @@ import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
 import fuzs.blockrunner.BlockRunner;
 import fuzs.blockrunner.init.ModRegistry;
-import fuzs.neoforgedatapackextensions.api.v1.DataMapRegistry;
+import fuzs.multiloaderdataextensions.common.api.v2.DataMapLookup;
 import net.minecraft.core.Holder;
 import net.minecraft.resources.Identifier;
 import net.minecraft.world.level.block.Block;
@@ -19,11 +19,11 @@ public record BlockSpeed(double speed) {
             MAX_SPEED_VALUE).fieldOf("speed").forGetter(BlockSpeed::speed)).apply(in, BlockSpeed::new)), SPEED_CODEC);
 
     public static boolean hasBlockSpeed(Holder<Block> holder) {
-        return DataMapRegistry.INSTANCE.getData(ModRegistry.BLOCK_SPEED_DATA_MAP_TYPE, holder) != null;
+        return DataMapLookup.getData(ModRegistry.BLOCK_SPEED_DATA_MAP_TYPE, holder) != null;
     }
 
     public static double getSpeedFactor(Holder<Block> holder) {
-        BlockSpeed blockSpeed = DataMapRegistry.INSTANCE.getData(ModRegistry.BLOCK_SPEED_DATA_MAP_TYPE, holder);
+        BlockSpeed blockSpeed = DataMapLookup.getData(ModRegistry.BLOCK_SPEED_DATA_MAP_TYPE, holder);
         return blockSpeed != null ? blockSpeed.speed() : 1.0;
     }
 }

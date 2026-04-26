@@ -2,8 +2,8 @@ package fuzs.blockrunner;
 
 import fuzs.blockrunner.config.ClientConfig;
 import fuzs.blockrunner.init.ModRegistry;
-import fuzs.puzzleslib.api.config.v3.ConfigHolder;
-import fuzs.puzzleslib.api.core.v1.ModConstructor;
+import fuzs.puzzleslib.common.api.config.v3.ConfigHolder;
+import fuzs.puzzleslib.common.api.core.v1.ModConstructor;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.Identifier;
 import org.slf4j.Logger;

@@ -1,9 +1,10 @@
 {
+    "minecraft": "26.1.2",
     "mod": {
         "id": "blockrunner",
         "group": "fuzs.blockrunner",
         "name": "Block Runner",
-        "version": "21.11.0",
+        "version": "26.1.0",
         "authors": [
             "Fuzs"
         ],
@@ -12,7 +13,7 @@
     },
     "dependencies": [
         {
-            "name": "neoforgedatapackextensions",
+            "name": "multiloaderdataextensions",
             "type": "embedded",
             "platforms": [
                 "fabric",
@@ -44,13 +45,13 @@
     ],
     "links": [
         {
-            "name": "github",
-            "slug": "blockrunner"
-        },
-        {
             "name": "curseforge",
             "slug": "block-runner",
             "id": "442842"
+        },
+        {
+            "name": "github",
+            "slug": "block-runner"
         },
         {
             "name": "modrinth",

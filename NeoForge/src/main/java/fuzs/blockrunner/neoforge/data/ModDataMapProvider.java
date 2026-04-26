@@ -2,8 +2,8 @@ package fuzs.blockrunner.neoforge.data;
 
 import fuzs.blockrunner.init.ModRegistry;
 import fuzs.blockrunner.world.level.block.data.BlockSpeed;
-import fuzs.neoforgedatapackextensions.neoforge.api.v1.NeoForgeDataMapToken;
-import fuzs.puzzleslib.api.data.v2.core.DataProviderContext;
+import fuzs.multiloaderdataextensions.neoforge.api.v2.NeoForgeDataMapToken;
+import fuzs.puzzleslib.common.api.data.v2.core.DataProviderContext;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.TagKey;

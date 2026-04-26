@@ -3,7 +3,7 @@ package fuzs.blockrunner.neoforge.client;
 import fuzs.blockrunner.BlockRunner;
 import fuzs.blockrunner.client.BlockRunnerClient;
 import fuzs.blockrunner.data.client.ModLanguageProvider;
-import fuzs.puzzleslib.api.client.core.v1.ClientModConstructor;
+import fuzs.puzzleslib.common.api.client.core.v1.ClientModConstructor;
 import fuzs.puzzleslib.neoforge.api.data.v2.core.DataProviderHelper;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.fml.common.Mod;
