@@ -1,43 +1,60 @@
 # Block Runner
 
-A Minecraft mod. Downloads can be found on [CurseForge](https://www.curseforge.com/members/fuzs_/projects) and [Modrinth](https://modrinth.com/user/Fuzs).
+### Minecraft 26.x
 
-![](https://raw.githubusercontent.com/Fuzss/modresources/main/pages/data/blockrunner/banner.png)
+| Branch | Status | Changelog | Fabric | NeoForge |
+| --- | --- | --- | --- | --- |
+| [26.1.x](https://github.com/Fuzss/block-runner/tree/26.1.x) | ✅&nbsp;Primary | [CHANGELOG.md](https://github.com/Fuzss/block-runner/blob/26.1.x/CHANGELOG.md) | <img src="https://cdn.simpleicons.org/curseforge" width="14" />&nbsp;[CurseForge](https://www.curseforge.com/minecraft/mc-mods/block-runner/files/all?version=26.1&gameVersionTypeId=4)<br /> <img src="https://cdn.simpleicons.org/modrinth" width="14" />&nbsp;[Modrinth](https://modrinth.com/mod/block-runner/versions?g=26.1&l=fabric) | <img src="https://cdn.simpleicons.org/curseforge" width="14" />&nbsp;[CurseForge](https://www.curseforge.com/minecraft/mc-mods/block-runner/files/all?version=26.1&gameVersionTypeId=6)<br /> <img src="https://cdn.simpleicons.org/modrinth" width="14" />&nbsp;[Modrinth](https://modrinth.com/mod/block-runner/versions?g=26.1&l=neoforge) |
 
-## Configuration (1.21+)
-Block Runner uses a block [data map](https://docs.neoforged.net/docs/resources/server/datamaps/) registered at `blockrunner:block_speeds` for defining block speeds. The data values consist of a single `speed` key paired with a double value, with `1.0` being the default block speed. 
+### Minecraft 1.21.x
 
-Data maps are available on Fabric as well provided by the bundled [NeoForge Data Pack Extensions](https://github.com/Fuzss/neoforgedatapackextensions) library.
+| Branch | Status | Changelog | Fabric | NeoForge |
+| --- | --- | --- | --- | --- |
+| [1.21.11](https://github.com/Fuzss/block-runner/tree/1.21.11) | ❌&nbsp;Archived | [CHANGELOG.md](https://github.com/Fuzss/block-runner/blob/1.21.11/CHANGELOG.md) | <img src="https://cdn.simpleicons.org/curseforge" width="14" />&nbsp;[CurseForge](https://www.curseforge.com/minecraft/mc-mods/block-runner/files/all?version=1.21.11&gameVersionTypeId=4)<br /> <img src="https://cdn.simpleicons.org/modrinth" width="14" />&nbsp;[Modrinth](https://modrinth.com/mod/block-runner/versions?g=1.21.11&l=fabric) | <img src="https://cdn.simpleicons.org/curseforge" width="14" />&nbsp;[CurseForge](https://www.curseforge.com/minecraft/mc-mods/block-runner/files/all?version=1.21.11&gameVersionTypeId=6)<br /> <img src="https://cdn.simpleicons.org/modrinth" width="14" />&nbsp;[Modrinth](https://modrinth.com/mod/block-runner/versions?g=1.21.11&l=neoforge) |
 
-**Example:** `data/blockrunner/data_maps/block/block_speeds.json`
-```json5
-{
-  "values": {
-    "minecraft:dirt_path": {
-      "speed": 1.35
-    }
-  }
-}
-```
+| Branch | Status | Changelog | Downloads |
+| --- | --- | --- | --- |
+| [1.21.10](https://github.com/Fuzss/block-runner/tree/1.21.10) | ❌&nbsp;Archived | [CHANGELOG.md](https://github.com/Fuzss/block-runner/blob/1.21.10/CHANGELOG.md) | <img src="https://cdn.simpleicons.org/curseforge" width="14" />&nbsp;[CurseForge](https://www.curseforge.com/members/fuzs_/projects)<br /><img src="https://cdn.simpleicons.org/modrinth" width="14" />&nbsp;[Modrinth](https://modrinth.com/user/Fuzs) |
+| [1.21.8](https://github.com/Fuzss/block-runner/tree/1.21.8) | ❌&nbsp;Archived | [CHANGELOG.md](https://github.com/Fuzss/block-runner/blob/1.21.8/CHANGELOG.md) | <img src="https://cdn.simpleicons.org/curseforge" width="14" />&nbsp;[CurseForge](https://www.curseforge.com/members/fuzs_/projects)<br /><img src="https://cdn.simpleicons.org/modrinth" width="14" />&nbsp;[Modrinth](https://modrinth.com/user/Fuzs) |
+| [1.21.5](https://github.com/Fuzss/block-runner/tree/1.21.5) | ❌&nbsp;Archived | [CHANGELOG.md](https://github.com/Fuzss/block-runner/blob/1.21.5/CHANGELOG.md) | <img src="https://cdn.simpleicons.org/curseforge" width="14" />&nbsp;[CurseForge](https://www.curseforge.com/members/fuzs_/projects)<br /><img src="https://cdn.simpleicons.org/modrinth" width="14" />&nbsp;[Modrinth](https://modrinth.com/user/Fuzs) |
+| [1.21.4](https://github.com/Fuzss/block-runner/tree/1.21.4) | ❌&nbsp;Archived | [CHANGELOG.md](https://github.com/Fuzss/block-runner/blob/1.21.4/CHANGELOG.md) | <img src="https://cdn.simpleicons.org/curseforge" width="14" />&nbsp;[CurseForge](https://www.curseforge.com/members/fuzs_/projects)<br /><img src="https://cdn.simpleicons.org/modrinth" width="14" />&nbsp;[Modrinth](https://modrinth.com/user/Fuzs) |
+| [1.21.3](https://github.com/Fuzss/block-runner/tree/1.21.3) | ❌&nbsp;Archived | [CHANGELOG.md](https://github.com/Fuzss/block-runner/blob/1.21.3/CHANGELOG.md) | <img src="https://cdn.simpleicons.org/curseforge" width="14" />&nbsp;[CurseForge](https://www.curseforge.com/members/fuzs_/projects)<br /><img src="https://cdn.simpleicons.org/modrinth" width="14" />&nbsp;[Modrinth](https://modrinth.com/user/Fuzs) |
+| [1.21.1](https://github.com/Fuzss/block-runner/tree/1.21.1) | ✅&nbsp;Maintained | [CHANGELOG.md](https://github.com/Fuzss/block-runner/blob/1.21.1/CHANGELOG.md) | <img src="https://cdn.simpleicons.org/curseforge" width="14" />&nbsp;[CurseForge](https://www.curseforge.com/members/fuzs_/projects)<br /><img src="https://cdn.simpleicons.org/modrinth" width="14" />&nbsp;[Modrinth](https://modrinth.com/user/Fuzs) |
 
-To aid other mod developers who wish to use Block Runners capabilities, a few block tags with default speed values are included. Those can easily be used by other modders to add support without providing their own data map.
-- `blockrunner:very_slow_blocks`: 0.45
-- `blockrunner:slow_blocks`: 0.65
-- `blockrunner:slightly_slow_blocks`: 0.85
-- `blockrunner:slightly_quick_blocks`: 1.15
-- `blockrunner:quick_blocks`: 1.35
-- `blockrunner:very_quick_blocks`: 1.55
+### Minecraft 1.20.x
 
-## Configuration (-1.20.4)
-The speed values Block Runner applies to individual blocks are fully configurable in a config file found at `.minecraft/config/blockrunner.json`. The file cannot be edited from in-game, but can be reloaded after having been edited in an external editor by running `/reload`.
+| Branch | Status | Changelog | Downloads |
+| --- | --- | --- | --- |
+| [1.20.4](https://github.com/Fuzss/block-runner/tree/1.20.4) | ❌&nbsp;Archived | [CHANGELOG.md](https://github.com/Fuzss/block-runner/blob/1.20.4/CHANGELOG.md) | <img src="https://cdn.simpleicons.org/curseforge" width="14" />&nbsp;[CurseForge](https://www.curseforge.com/members/fuzs_/projects)<br /><img src="https://cdn.simpleicons.org/modrinth" width="14" />&nbsp;[Modrinth](https://modrinth.com/user/Fuzs) |
+| [1.20.1](https://github.com/Fuzss/block-runner/tree/1.20.1) | ⚠️&nbsp;Bugfixes&nbsp;only | [CHANGELOG.md](https://github.com/Fuzss/block-runner/blob/1.20.1/CHANGELOG.md) | <img src="https://cdn.simpleicons.org/curseforge" width="14" />&nbsp;[CurseForge](https://www.curseforge.com/members/fuzs_/projects)<br /><img src="https://cdn.simpleicons.org/modrinth" width="14" />&nbsp;[Modrinth](https://modrinth.com/user/Fuzs) |
+| [1.20.0](https://github.com/Fuzss/block-runner/tree/1.20.0) | ❌&nbsp;Archived | [CHANGELOG.md](https://github.com/Fuzss/block-runner/blob/1.20.0/CHANGELOG.md) | <img src="https://cdn.simpleicons.org/curseforge" width="14" />&nbsp;[CurseForge](https://www.curseforge.com/members/fuzs_/projects)<br /><img src="https://cdn.simpleicons.org/modrinth" width="14" />&nbsp;[Modrinth](https://modrinth.com/user/Fuzs) |
 
-The file contains simple key and value pairs consisting of the block id (e.g. `minecraft:dirt_path`) or block tag id (e.g. `#minecraft:stone_bricks`) as a key and the corresponding speed value as a double with `1.0` being the normal block speed.
-Setting a block's speed to `1.0` can also be useful for removing a built-in speed, such as making soul sand no longer apply a slowdown effect.
+### Minecraft 1.19.x
 
-To aid other mod developers who wish to use Block Runners capabilities, Block Runner also includes a few block tags with default speed values associated with them which can easily be used by other modders to add support without declaring an explicit dependency.
-- `blockrunner:very_slow_blocks`: 0.45
-- `blockrunner:slow_blocks`: 0.65
-- `blockrunner:slightly_slow_blocks`: 0.85
-- `blockrunner:slightly_quick_blocks`: 1.15
-- `blockrunner:quick_blocks`: 1.35
-- `blockrunner:very_quick_blocks`: 1.55
+| Branch | Status | Changelog | Downloads |
+| --- | --- | --- | --- |
+| [1.19.4](https://github.com/Fuzss/block-runner/tree/1.19.4) | ❌&nbsp;Archived | [CHANGELOG.md](https://github.com/Fuzss/block-runner/blob/1.19.4/CHANGELOG.md) | <img src="https://cdn.simpleicons.org/curseforge" width="14" />&nbsp;[CurseForge](https://www.curseforge.com/members/fuzs_/projects)<br /><img src="https://cdn.simpleicons.org/modrinth" width="14" />&nbsp;[Modrinth](https://modrinth.com/user/Fuzs) |
+| [1.19.3](https://github.com/Fuzss/block-runner/tree/1.19.3) | ❌&nbsp;Archived | [CHANGELOG.md](https://github.com/Fuzss/block-runner/blob/1.19.3/CHANGELOG.md) | <img src="https://cdn.simpleicons.org/curseforge" width="14" />&nbsp;[CurseForge](https://www.curseforge.com/members/fuzs_/projects)<br /><img src="https://cdn.simpleicons.org/modrinth" width="14" />&nbsp;[Modrinth](https://modrinth.com/user/Fuzs) |
+| [1.19.2](https://github.com/Fuzss/block-runner/tree/1.19.2) | ❌&nbsp;Archived | [CHANGELOG.md](https://github.com/Fuzss/block-runner/blob/1.19.2/CHANGELOG.md) | <img src="https://cdn.simpleicons.org/curseforge" width="14" />&nbsp;[CurseForge](https://www.curseforge.com/members/fuzs_/projects)<br /><img src="https://cdn.simpleicons.org/modrinth" width="14" />&nbsp;[Modrinth](https://modrinth.com/user/Fuzs) |
+
+### Minecraft 1.18.x
+
+| Branch | Status | Changelog | Downloads |
+| --- | --- | --- | --- |
+| [1.18.2](https://github.com/Fuzss/block-runner/tree/1.18.2) | ❌&nbsp;Archived | [CHANGELOG.md](https://github.com/Fuzss/block-runner/blob/1.18.2/CHANGELOG.md) | <img src="https://cdn.simpleicons.org/curseforge" width="14" />&nbsp;[CurseForge](https://www.curseforge.com/members/fuzs_/projects)<br /><img src="https://cdn.simpleicons.org/modrinth" width="14" />&nbsp;[Modrinth](https://modrinth.com/user/Fuzs) |
+
+### Minecraft 1.16.x
+
+| Branch | Status | Changelog | Downloads |
+| --- | --- | --- | --- |
+| [1.16.5](https://github.com/Fuzss/block-runner/tree/1.16.5) | ❌&nbsp;Archived | [CHANGELOG.md](https://github.com/Fuzss/block-runner/blob/1.16.5/CHANGELOG.md) | <img src="https://cdn.simpleicons.org/curseforge" width="14" />&nbsp;[CurseForge](https://www.curseforge.com/members/fuzs_/projects)<br /><img src="https://cdn.simpleicons.org/modrinth" width="14" />&nbsp;[Modrinth](https://modrinth.com/user/Fuzs) |
+
+---
+
+**✅&nbsp;Primary** — Latest version with active development and new features
+
+**✅&nbsp;Maintained** — Receives backports and selected new features
+
+**⚠️&nbsp;Bugfixes&nbsp;only** — Critical fixes and crash fixes only
+
+**❌&nbsp;Archived** — No longer updated
