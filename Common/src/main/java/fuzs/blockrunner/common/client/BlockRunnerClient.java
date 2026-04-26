@@ -1,6 +1,6 @@
-package fuzs.blockrunner.client;
+package fuzs.blockrunner.common.client;
 
-import fuzs.blockrunner.client.handler.BlockSpeedTooltipHandler;
+import fuzs.blockrunner.common.client.handler.BlockSpeedTooltipHandler;
 import fuzs.puzzleslib.common.api.client.core.v1.ClientModConstructor;
 import fuzs.puzzleslib.common.api.client.event.v1.gui.ItemTooltipCallback;
 

@@ -1,4 +1,4 @@
-package fuzs.blockrunner.config;
+package fuzs.blockrunner.common.config;
 
 import fuzs.puzzleslib.common.api.config.v3.Config;
 import fuzs.puzzleslib.common.api.config.v3.ConfigCore;

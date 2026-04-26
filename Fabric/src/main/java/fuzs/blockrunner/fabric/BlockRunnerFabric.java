@@ -1,6 +1,6 @@
 package fuzs.blockrunner.fabric;
 
-import fuzs.blockrunner.BlockRunner;
+import fuzs.blockrunner.common.BlockRunner;
 import fuzs.puzzleslib.common.api.core.v1.ModConstructor;
 import net.fabricmc.api.ModInitializer;
 

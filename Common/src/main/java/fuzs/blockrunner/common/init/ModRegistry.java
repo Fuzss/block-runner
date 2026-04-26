@@ -1,7 +1,7 @@
-package fuzs.blockrunner.init;
+package fuzs.blockrunner.common.init;
 
-import fuzs.blockrunner.BlockRunner;
-import fuzs.blockrunner.world.level.block.data.BlockSpeed;
+import fuzs.blockrunner.common.BlockRunner;
+import fuzs.blockrunner.common.world.level.block.data.BlockSpeed;
 import fuzs.multiloaderdataextensions.common.api.v2.DataMapRegistrar;
 import fuzs.multiloaderdataextensions.common.api.v2.DataMapToken;
 import fuzs.puzzleslib.common.api.init.v3.tags.TagFactory;

@@ -1,9 +1,9 @@
-package fuzs.blockrunner.world.level.block.data;
+package fuzs.blockrunner.common.world.level.block.data;
 
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import fuzs.blockrunner.BlockRunner;
-import fuzs.blockrunner.init.ModRegistry;
+import fuzs.blockrunner.common.BlockRunner;
+import fuzs.blockrunner.common.init.ModRegistry;
 import fuzs.multiloaderdataextensions.common.api.v2.DataMapLookup;
 import net.minecraft.core.Holder;
 import net.minecraft.resources.Identifier;

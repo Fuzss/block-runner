@@ -1,8 +1,8 @@
-package fuzs.blockrunner.client.handler;
+package fuzs.blockrunner.common.client.handler;
 
-import fuzs.blockrunner.BlockRunner;
-import fuzs.blockrunner.config.ClientConfig;
-import fuzs.blockrunner.world.level.block.data.BlockSpeed;
+import fuzs.blockrunner.common.BlockRunner;
+import fuzs.blockrunner.common.config.ClientConfig;
+import fuzs.blockrunner.common.world.level.block.data.BlockSpeed;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.Holder;
 import net.minecraft.network.chat.Component;

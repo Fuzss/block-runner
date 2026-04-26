@@ -1,6 +1,6 @@
-package fuzs.blockrunner.helper;
+package fuzs.blockrunner.common.helper;
 
-import fuzs.blockrunner.world.level.block.data.BlockSpeed;
+import fuzs.blockrunner.common.world.level.block.data.BlockSpeed;
 import net.minecraft.core.Holder;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.attributes.AttributeInstance;

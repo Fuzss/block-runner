@@ -1,6 +1,6 @@
-package fuzs.blockrunner.data;
+package fuzs.blockrunner.common.data;
 
-import fuzs.blockrunner.init.ModRegistry;
+import fuzs.blockrunner.common.init.ModRegistry;
 import fuzs.puzzleslib.common.api.data.v2.core.DataProviderContext;
 import fuzs.puzzleslib.common.api.data.v2.tags.AbstractTagProvider;
 import net.minecraft.core.HolderLookup;

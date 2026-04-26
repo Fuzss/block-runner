@@ -1,10 +1,10 @@
-package fuzs.blockrunner.client.helper;
+package fuzs.blockrunner.common.client.helper;
 
 import com.google.common.collect.Maps;
 import com.google.common.collect.Sets;
-import fuzs.blockrunner.BlockRunner;
-import fuzs.blockrunner.config.ClientConfig;
-import fuzs.blockrunner.world.level.block.data.BlockSpeed;
+import fuzs.blockrunner.common.BlockRunner;
+import fuzs.blockrunner.common.config.ClientConfig;
+import fuzs.blockrunner.common.world.level.block.data.BlockSpeed;
 import net.minecraft.client.Minecraft;
 import net.minecraft.resources.Identifier;
 import net.minecraft.world.entity.ai.attributes.AttributeInstance;

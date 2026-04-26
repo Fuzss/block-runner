@@ -1,8 +1,8 @@
-package fuzs.blockrunner.mixin;
+package fuzs.blockrunner.common.mixin;
 
 import com.google.common.base.Objects;
-import fuzs.blockrunner.helper.BlockSpeedAttributeHelper;
-import fuzs.blockrunner.world.level.block.data.BlockSpeed;
+import fuzs.blockrunner.common.helper.BlockSpeedAttributeHelper;
+import fuzs.blockrunner.common.world.level.block.data.BlockSpeed;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Holder;
 import net.minecraft.server.level.ServerLevel;

@@ -1,7 +1,7 @@
-package fuzs.blockrunner.mixin.client;
+package fuzs.blockrunner.common.mixin.client;
 
 import com.mojang.authlib.GameProfile;
-import fuzs.blockrunner.client.helper.FieldOfViewHelper;
+import fuzs.blockrunner.common.client.helper.FieldOfViewHelper;
 import net.minecraft.client.player.AbstractClientPlayer;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
