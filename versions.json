@@ -6,11 +6,17 @@
     "26.1.x": "maintained",
     "26.2.x": "primary"
   },
-  "properties": {
-    "distributions.curseforge.id": "442842",
-    "distributions.curseforge.slug": "block-runner",
-    "distributions.github.slug": "block-runner",
-    "distributions.modrinth.id": "1VSGxqkt",
-    "distributions.modrinth.slug": "block-runner"
+  "distributions": {
+    "curseforge": {
+      "id": "442842",
+      "slug": "block-runner"
+    },
+    "github": {
+      "slug": "block-runner"
+    },
+    "modrinth": {
+      "id": "1VSGxqkt",
+      "slug": "block-runner"
+    }
   }
 }
