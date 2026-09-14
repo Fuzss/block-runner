@@ -2,7 +2,7 @@
 
 A Minecraft mod. Downloads can be found on [CurseForge](https://www.curseforge.com/members/fuzs_/projects) and [Modrinth](https://modrinth.com/user/Fuzs).
 
-![](https://raw.githubusercontent.com/Fuzss/modresources/main/pages/data/blockrunner/banner.png)
+![](banner.png)
 
 ## Configuration (1.21+)
 Block Runner uses a block [data map](https://docs.neoforged.net/docs/resources/server/datamaps/) registered at `blockrunner:block_speeds` for defining block speeds. The data values consist of a single `speed` key paired with a double value, with `1.0` being the default block speed. 
