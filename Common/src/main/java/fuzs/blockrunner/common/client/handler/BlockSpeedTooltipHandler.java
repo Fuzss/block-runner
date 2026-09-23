@@ -21,13 +21,15 @@ public class BlockSpeedTooltipHandler {
 
     public static void onItemTooltip(ItemStack itemStack, List<Component> lines, Item.TooltipContext tooltipContext, @Nullable Player player, TooltipFlag tooltipFlag) {
         if (!BlockRunner.CONFIG.getHolder(ClientConfig.class).isAvailable() ||
-                !BlockRunner.CONFIG.get(ClientConfig.class).blockSpeedMultiplierTooltip) {
+                !BlockRunner.CONFIG.get(ClientConfig.class).blockSpeedItemTooltip) {
             return;
         }
+
         if (itemStack.getItem() instanceof BlockItem item) {
             Holder.Reference<Block> holder = item.getBlock().builtInRegistryHolder();
             if (BlockSpeed.hasBlockSpeed(holder)) {
-                lines.add(Component.translatable(KEY_SPEED_MULTIPLIER, BlockSpeed.getSpeedFactor(holder))
+                double speed = BlockSpeed.getBlockSpeed(holder);
+                lines.add(Component.translatable(KEY_SPEED_MULTIPLIER, speed)
                         .withStyle(ChatFormatting.GRAY));
             }
         }

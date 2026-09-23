@@ -15,8 +15,8 @@ public class BlockSpeedAttributeHelper {
     public static void removeBlockSpeed(LivingEntity livingEntity) {
         AttributeInstance attribute = livingEntity.getAttribute(Attributes.MOVEMENT_SPEED);
         if (attribute != null) {
-            if (attribute.getModifier(BlockSpeed.SPEED_MODIFIER_BLOCK_SPEED_IDENTIFIER) != null) {
-                attribute.removeModifier(BlockSpeed.SPEED_MODIFIER_BLOCK_SPEED_IDENTIFIER);
+            if (attribute.getModifier(BlockSpeed.SPEED_MODIFIER_BLOCK_SPEED_ID) != null) {
+                attribute.removeModifier(BlockSpeed.SPEED_MODIFIER_BLOCK_SPEED_ID);
             }
         }
     }
@@ -27,13 +27,16 @@ public class BlockSpeedAttributeHelper {
             if (!blockState.isAir()) {
                 // check the block the entity is directly on to be able to support very thin blocks such as carpet
                 Holder.Reference<Block> holder = blockState.getBlock().builtInRegistryHolder();
-                double speedFactor = BlockSpeed.getSpeedFactor(holder);
+                double speed = BlockSpeed.getBlockSpeed(holder);
                 AttributeInstance attribute = livingEntity.getAttribute(Attributes.MOVEMENT_SPEED);
-                if (attribute == null || speedFactor == 1.0) return;
+                if (attribute == null || speed == BlockSpeed.DEFAULT_SPEED) {
+                    return;
+                }
+
                 double baseValue = attribute.getBaseValue();
-                speedFactor = speedFactor * baseValue - baseValue;
-                attribute.addTransientModifier(new AttributeModifier(BlockSpeed.SPEED_MODIFIER_BLOCK_SPEED_IDENTIFIER,
-                        speedFactor,
+                speed = speed * baseValue - baseValue;
+                attribute.addTransientModifier(new AttributeModifier(BlockSpeed.SPEED_MODIFIER_BLOCK_SPEED_ID,
+                        speed,
                         AttributeModifier.Operation.ADD_VALUE));
             }
         }

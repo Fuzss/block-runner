@@ -22,11 +22,16 @@ import java.util.stream.Stream;
 public class FieldOfViewHelper {
 
     public static boolean shouldRemoveBlockSpeedModifier(Player player) {
-        if (!BlockRunner.CONFIG.get(ClientConfig.class).disableFieldOfViewChanges) return false;
-        if (Minecraft.getInstance().options.getCameraType().isFirstPerson() && player.isScoping()) return false;
-        return player.getAttributes().hasModifier(Attributes.MOVEMENT_SPEED,
-                BlockSpeed.SPEED_MODIFIER_BLOCK_SPEED_IDENTIFIER
-        );
+        if (!BlockRunner.CONFIG.get(ClientConfig.class).disableFieldOfViewChanges) {
+            return false;
+        }
+
+        if (Minecraft.getInstance().options.getCameraType().isFirstPerson() && player.isScoping()) {
+            return false;
+        }
+
+        return player.getAttributes()
+                .hasModifier(Attributes.MOVEMENT_SPEED, BlockSpeed.SPEED_MODIFIER_BLOCK_SPEED_ID);
     }
 
     public static float getFieldOfViewModifierWithoutBlockSpeed(Player player) {
@@ -34,8 +39,7 @@ public class FieldOfViewHelper {
         AttributeInstance attribute = player.getAttribute(Attributes.MOVEMENT_SPEED);
         if (attribute != null) {
             double movementSpeed = calculateAttributeValueSkipping(attribute,
-                    BlockSpeed.SPEED_MODIFIER_BLOCK_SPEED_IDENTIFIER
-            );
+                    BlockSpeed.SPEED_MODIFIER_BLOCK_SPEED_ID);
             fovModifier *= ((float) movementSpeed / player.getAbilities().getWalkingSpeed() + 1.0F) / 2.0F;
         }
         return fovModifier;
@@ -45,11 +49,11 @@ public class FieldOfViewHelper {
 
         double baseValue = attribute.getBaseValue();
 
-        Map<AttributeModifier.Operation, Set<AttributeModifier>> operationToModifiers = Stream.of(
-                AttributeModifier.Operation.values()).collect(
-                Collectors.toMap(Function.identity(), operation -> Sets.newHashSet(), (o1, o2) -> o1,
-                        () -> Maps.newEnumMap(AttributeModifier.Operation.class)
-                ));
+        Map<AttributeModifier.Operation, Set<AttributeModifier>> operationToModifiers = Stream.of(AttributeModifier.Operation.values())
+                .collect(Collectors.toMap(Function.identity(),
+                        operation -> Sets.newHashSet(),
+                        (o1, o2) -> o1,
+                        () -> Maps.newEnumMap(AttributeModifier.Operation.class)));
         attribute.getModifiers()
                 .stream()
                 .filter(modifier -> !ArrayUtils.contains(skippedModifiers, modifier.id()))
@@ -61,13 +65,11 @@ public class FieldOfViewHelper {
 
         double baseValueCopy = baseValue;
 
-        for (AttributeModifier attributeModifier : operationToModifiers.get(
-                AttributeModifier.Operation.ADD_MULTIPLIED_BASE)) {
+        for (AttributeModifier attributeModifier : operationToModifiers.get(AttributeModifier.Operation.ADD_MULTIPLIED_BASE)) {
             baseValueCopy += baseValue * attributeModifier.amount();
         }
 
-        for (AttributeModifier attributeModifier : operationToModifiers.get(
-                AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL)) {
+        for (AttributeModifier attributeModifier : operationToModifiers.get(AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL)) {
             baseValueCopy *= 1.0 + attributeModifier.amount();
         }
 
