@@ -4,7 +4,7 @@ import fuzs.blockrunner.common.BlockRunner;
 import fuzs.blockrunner.common.client.BlockRunnerClient;
 import fuzs.blockrunner.common.data.client.ModLanguageProvider;
 import fuzs.puzzleslib.common.api.client.core.v1.ClientModConstructor;
-import fuzs.puzzleslib.neoforge.api.data.v2.core.DataProviderHelper;
+import fuzs.puzzleslib.neoforge.api.data.v3.core.DataProviderBuilder;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.fml.common.Mod;
 
@@ -13,6 +13,6 @@ public class BlockRunnerNeoForgeClient {
 
     public BlockRunnerNeoForgeClient() {
         ClientModConstructor.construct(BlockRunner.MOD_ID, BlockRunnerClient::new);
-        DataProviderHelper.registerDataProviders(BlockRunner.MOD_ID, ModLanguageProvider::new);
+        DataProviderBuilder.of(BlockRunner.MOD_ID).addProvider(ModLanguageProvider::new);
     }
 }

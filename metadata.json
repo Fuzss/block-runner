@@ -1,10 +1,10 @@
 {
-    "minecraft": "26.2",
+    "minecraft": "26.3",
     "mod": {
         "id": "blockrunner",
         "group": "fuzs.blockrunner",
         "name": "Block Runner",
-        "version": "26.2.0",
+        "version": "26.3.0",
         "authors": [
             "Fuzs"
         ],
@@ -12,14 +12,6 @@
         "license": "MPL-2.0"
     },
     "dependencies": [
-        {
-            "name": "multiloaderdataextensions",
-            "type": "embedded",
-            "platforms": [
-                "fabric",
-                "neoforge"
-            ]
-        },
         {
             "name": "fabricapi",
             "type": "required",
@@ -32,6 +24,14 @@
             "type": "required",
             "platforms": [
                 "fabric"
+            ]
+        },
+        {
+            "name": "multiloaderdataextensions",
+            "type": "embedded",
+            "platforms": [
+                "fabric",
+                "neoforge"
             ]
         },
         {
